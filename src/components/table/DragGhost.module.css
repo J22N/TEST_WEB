@@ -1,0 +1,9 @@
+.ghost {
+  position: fixed;
+  z-index: var(--z-ghost);
+  pointer-events: none;
+  transform: scale(1.06) rotate(-1.5deg);
+  transform-origin: center;
+  filter: drop-shadow(0 12px 20px rgba(17, 24, 39, 0.28));
+  opacity: 0.95;
+}

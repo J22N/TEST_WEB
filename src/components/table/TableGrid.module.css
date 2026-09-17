@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-auto-rows: var(--table-size);
+  column-gap: 4px;
+  row-gap: 8px;
+  width: max-content;
+}
+
+.cell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

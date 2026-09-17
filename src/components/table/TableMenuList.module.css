@@ -1,0 +1,56 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.item,
+.more {
+  display: flex;
+  align-items: center;
+  height: 18px;
+  padding: 0 6px;
+  border-radius: 8px;
+  font-size: var(--size-caption-2);
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.itemName {
+  flex: 1 0 0;
+  min-width: 0;
+  max-width: 80px;
+  font-weight: 500;
+  color: var(--color-gray-600);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dot {
+  flex-shrink: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--color-gray-400);
+}
+
+.itemQty {
+  flex-shrink: 0;
+  width: 20px;
+  font-weight: 600;
+  color: var(--color-gray-600);
+  text-align: right;
+}
+
+.more {
+  gap: 4px;
+  font-weight: 500;
+  color: var(--color-gray-400);
+  white-space: nowrap;
+}

@@ -1,0 +1,11 @@
+.icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

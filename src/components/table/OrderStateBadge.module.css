@@ -1,0 +1,31 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-size: var(--size-caption-2);
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--color-white);
+}
+
+.badge[data-kind='ordering'] {
+  background: var(--color-gray-500);
+}
+
+.badge[data-kind='neworder'] {
+  background: linear-gradient(113deg, var(--color-blue-600) 10%, var(--color-sky-900) 90%);
+}
+
+.badge[data-kind='bellring'] {
+  background: linear-gradient(113deg, var(--color-orange-600) 10%, var(--color-amber-800) 90%);
+}
+
+.badge[data-kind='elapsed'] {
+  background: var(--color-gray-100);
+  color: var(--color-gray-600);
+}

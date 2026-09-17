@@ -1,0 +1,97 @@
+.bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  z-index: var(--z-panel);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: min(680px, calc(100vw - 32px));
+  padding: 12px 12px 12px 20px;
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: var(--shadow-float);
+  animation: slide-up 0.18s ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.info {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--color-gray-500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.action,
+.close {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.action {
+  background: var(--color-gray-800);
+  color: var(--color-white);
+}
+
+.action[data-variant='group'] {
+  background: var(--color-violet-500);
+}
+
+.action[data-variant='ghost'] {
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+.action:disabled {
+  background: var(--color-gray-100);
+  color: var(--color-gray-400);
+  cursor: default;
+}
+
+.close {
+  width: 44px;
+  padding: 0;
+  background: var(--color-gray-100);
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 1024px) {
+  .sub {
+    display: none;
+  }
+}

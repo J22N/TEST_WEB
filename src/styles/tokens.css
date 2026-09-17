@@ -1,0 +1,63 @@
+:root {
+  /* colors */
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-blue-100: #dbeafe;
+  --color-blue-600: #2563eb;
+  --color-blue-900: #1e3a8a;
+  --color-sky-100: #e0f2fe;
+  --color-sky-300: #7dd3fc;
+  --color-sky-500: #0ea5e9;
+  --color-sky-900: #0c4a6e;
+  --color-orange-600: #ea580c;
+  --color-amber-800: #92400e;
+  --color-red-600: #dc2626;
+  --color-purple-400: #c084fc;
+  --color-purple-500: #a855f7;
+  --color-purple-800: #6b21a8;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-emerald-800: #065f46;
+  --color-violet-100: #ede9fe;
+  --color-violet-300: #c4b5fd;
+  --color-violet-500: #8b5cf6;
+  --color-violet-800: #5b21b6;
+
+  /* elevation */
+  --shadow-popover: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-float: 0 8px 24px rgba(17, 24, 39, 0.18);
+
+  /* z-index */
+  --z-scrim: 10;
+  --z-grid-active: 20;
+  --z-panel: 30;
+  --z-ghost: 40;
+  --z-toast: 50;
+
+  /* typography */
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    sans-serif;
+  --size-headline-1: 20px;
+  --size-body-1: 16px;
+  --size-caption-2: 11px;
+
+  /* radius */
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-card: 18px;
+  --radius-full: 9999px;
+
+  /* table */
+  --table-size: 140px;
+  --table-content-size: 124px;
+}

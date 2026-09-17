@@ -1,0 +1,24 @@
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px 8px;
+  border-radius: 13px;
+  font-size: var(--size-caption-2);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.badge[data-color='purple'] {
+  background: linear-gradient(180deg, var(--color-purple-400), var(--color-purple-500));
+}
+
+.badge[data-color='green'] {
+  background: linear-gradient(180deg, var(--color-emerald-400), var(--color-emerald-500));
+}

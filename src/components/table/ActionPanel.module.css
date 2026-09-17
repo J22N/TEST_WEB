@@ -1,0 +1,127 @@
+.panel {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: var(--z-panel);
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(400px, calc(100vw - 32px));
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: var(--shadow-float);
+  animation: slide-down 0.18s ease-out;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-gray-800);
+}
+
+.subtitle {
+  margin-top: -12px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-gray-800);
+}
+
+.subtitle[data-highlight='true'] {
+  color: var(--color-blue-600);
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-gray-100);
+  font-size: 12px;
+  color: var(--color-gray-500);
+}
+
+.confirm {
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--color-gray-800);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-white);
+  transition: background-color 0.15s ease;
+}
+
+.confirm:disabled {
+  background: var(--color-gray-100);
+  color: var(--color-gray-400);
+  cursor: default;
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--color-gray-500);
+  text-align: center;
+}
+
+/* 합석 / 단체 선택 */
+.choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-gray-200);
+  background: var(--color-gray-50);
+  text-align: left;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.choice:hover,
+.choice:focus-visible {
+  border-color: var(--color-violet-500);
+  background: var(--color-violet-100);
+}
+
+.choice strong {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.choice span {
+  font-size: 13px;
+  color: var(--color-gray-500);
+}
